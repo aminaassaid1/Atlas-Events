@@ -8,9 +8,9 @@ const SearchBar = () => {
   const [guests, setGuests] = useState(50);
 
   return (
-    <section className="bg-lightturquoise xl:pt-17.5 pt-12.5 px-5">
-      <div className="max-w-250 mx-auto lg:h-25 p-1.75 bg-paleaqua lg:rounded-25xl rounded-2xl">
-        <div className="bg-white rounded-2xl lg:rounded-full p-4 lg:p-3 lg:pl-10">
+    <section className="bg-lightturquoise xl:pt-17.5 pt-12.5 px-4 md:px-5">
+      <div className="max-w-250 mx-auto lg:h-25 p-1.5 md:p-1.75 bg-paleaqua lg:rounded-25xl rounded-2xl">
+        <div className="bg-white rounded-xl lg:rounded-full p-3 md:p-4 lg:p-3 lg:pl-10">
           <form className="flex flex-col lg:flex-row items-center gap-4 lg:gap-6">
             {/* Location */}
             <div className="w-full lg:w-auto lg:flex-1">
@@ -66,7 +66,7 @@ const SearchBar = () => {
                 value={date}
                 onChange={(e) => setDate(e.target.value)}
                 placeholder="Choisir une date"
-                className="w-full bg-transparent text-xl font-bold text-primary outline-none"
+                className="w-full bg-transparent text-lg md:text-xl font-bold text-primary outline-none"
               />
             </div>
 

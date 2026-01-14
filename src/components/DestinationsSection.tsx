@@ -103,13 +103,13 @@ const DestinationsSection = () => {
           {/* Navigation Buttons */}
           <button
             onClick={prevSlide}
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-2 md:-translate-x-4 z-20 bg-white shadow-lg rounded-full p-2 md:p-3 hover:bg-primary hover:text-white transition-all duration-300"
+            className="absolute left-2 md:-left-4 top-1/2 -translate-y-1/2 z-20 bg-white shadow-lg rounded-full p-2 md:p-3 hover:bg-primary hover:text-white transition-all duration-300"
           >
             <ChevronLeft className="h-5 w-5 md:h-6 md:w-6" />
           </button>
           <button
             onClick={nextSlide}
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-2 md:translate-x-4 z-20 bg-white shadow-lg rounded-full p-2 md:p-3 hover:bg-primary hover:text-white transition-all duration-300"
+            className="absolute right-2 md:-right-4 top-1/2 -translate-y-1/2 z-20 bg-white shadow-lg rounded-full p-2 md:p-3 hover:bg-primary hover:text-white transition-all duration-300"
           >
             <ChevronRight className="h-5 w-5 md:h-6 md:w-6" />
           </button>

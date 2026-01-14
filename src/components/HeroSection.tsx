@@ -37,13 +37,13 @@ const HeroSection = () => {
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="!font-display 2xl:text-[180px] xl:text-[130px] md:text-[80px] text-[60px] !text-white relative inline-block animate-slide-left leading-none"
+              className="!font-display 2xl:text-[180px] xl:text-[130px] lg:text-[100px] md:text-[80px] text-[50px] !text-white relative inline-block animate-slide-left leading-none"
               title="Morocco"
             >
               Morocco
             </motion.h1>
             <h1
-              className="!font-display 2xl:text-[180px] xl:text-[130px] md:text-[80px] text-[60px] !text-transparent absolute left-0 top-0 z-1 [-webkit-text-stroke:2px_#fff] animate-slide-left pointer-events-none leading-none"
+              className="!font-display 2xl:text-[180px] xl:text-[130px] lg:text-[100px] md:text-[80px] text-[50px] !text-transparent absolute left-0 top-0 z-1 [-webkit-text-stroke:2px_#fff] animate-slide-left pointer-events-none leading-none"
               title="Morocco"
             >
               Morocco
