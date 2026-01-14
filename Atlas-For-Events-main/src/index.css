@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Atlas For Events color palette */
+    --primary: 210 100% 48%;       /* #0052f5 - Deep Blue */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 27 100% 50%;      /* #ff7800 - Orange */
+    --secondary-foreground: 0 0% 100%;
+    
+    --background: 0 0% 100%;       /* #FFFFFF */
+    --foreground: 210 100% 30%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 210 100% 30%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 100% 30%;
+    
+    --muted: 210 20% 95%;
+    --muted-foreground: 210 30% 40%;
+    --accent: 204 82% 54%;         /* #2d98e8 - Light Blue */
+    --accent-foreground: 0 0% 100%;
+    
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    
+    --border: 210 20% 90%;
+    --input: 210 20% 90%;
+    --ring: 210 100% 48%;
+    --radius: 0.5rem;
+    
+    /* Custom Atlas theme colors */
+    --atlas-blue: 210 100% 48%;    /* #0052f5 */
+    --atlas-light-blue: 204 82% 54%; /* #2d98e8 */
+    --atlas-orange: 27 100% 50%;   /* #ff7800 */
+    --atlas-gold: 42 100% 50%;     /* #ffb700 */
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 210 100% 48%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 210 100% 48%;
+  }
+
+  .dark {
+    --background: 210 50% 8%;
+    --foreground: 0 0% 98%;
+    --card: 210 50% 8%;
+    --card-foreground: 0 0% 98%;
+    --popover: 210 50% 8%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 210 100% 48%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 27 100% 50%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 210 40% 20%;
+    --muted-foreground: 210 30% 65%;
+    --accent: 204 82% 54%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 210 40% 20%;
+    --input: 210 40% 20%;
+    --ring: 210 100% 48%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 210 100% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 210 100% 48%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+}
+
+/* Rain Animation */
+@keyframes rain-drop {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
+
+@keyframes rain-stem {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+
+.animate-rain-drop {
+  animation: rain-drop 0.5s linear infinite;
+}
+
+.animate-rain-stem {
+  animation: rain-stem 0.5s linear infinite;
+}
